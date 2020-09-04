@@ -202,9 +202,12 @@ textarea {
 
 /*SLIDERS-ADAPTATION*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "SourceSansRegular";
-  scroll-behavior: smooth;
 }
 
 .container {
@@ -301,7 +304,7 @@ nav a {
 nav a:hover {
   text-decoration: none;
   color: #ffffff;
-  background: url("../img/border-bottom.svg") bottom left/42px 2px no-repeat;
+  background: url("../img/border-bottom.svg") bottom center/42px 2px no-repeat;
 }
 
 .header__logo {
@@ -877,11 +880,12 @@ footer div.media i .fa-linkedin-in {
 
 .btn-outline-secondary:hover,
 .btn-primary:hover {
-  background: #0069d9;
+  background: #008ed6;
+  border-color: #008ed6;
 }
 
 .btn-primary {
-  background: #008ed6;
+  background: transparent;
 }
 
 .btn-outline {
@@ -1066,13 +1070,13 @@ footer div.media i .fa-linkedin-in {
   /******PRODUCTION******/
 
   section.cards {
-    padding: 0 15px;
+    padding: 25px 15px;
   }
 
   /********form********/
 
   section.contact-form {
-    padding: 90px 0;
+    padding: 30px 0 90px;
   }
 
   .contact__container {
@@ -1327,9 +1331,10 @@ footer div.media i .fa-linkedin-in {
   .navbar__header {
     display: block;
     position: absolute;
-    top: -480px;
+    top: -505px;
     left: 0;
     padding-top: 50px;
+    padding-bottom: 50px;
     width: 100%;
     -webkit-transition: all 0.8s;
     -o-transition: all 0.8s;
@@ -1481,10 +1486,21 @@ footer div.media i .fa-linkedin-in {
   }
 
   .title__contact {
-    margin: 0 0 20px;
+    margin: 0 0 30px;
+  }
+
+  /*contact title*/
+
+  .title__contact {
+    padding: 5px 0 20px;
   }
 
   /*card-btn*/
+
+  .title_products {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
 
   .card__btn {
     margin: 20px;
@@ -1646,6 +1662,6 @@ footer div.media i .fa-linkedin-in {
   }
 
   section.contact-form {
-    padding: 0;
+    padding: 30px 0 0;
   }
 }
